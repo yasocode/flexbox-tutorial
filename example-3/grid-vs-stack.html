@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flexbox Tutorial</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
+                <ul class="social">
+                    <li><a href="" class="fb">Facebook</a></li>
+                    <li><a href="" class="tw">Twitter</a></li>
+                </ul>
+            </nav>
+
+            <div style="margin: 20px;">
+                <span>Layout: </span>
+                <a href="#" class="stack">Stack</a>
+                <a href="#" class="grid">Grid</a>
+            </div>
+
+            <section id="blocks">
+                <article>
+                    <h2>I pity the fool...</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum earum ea, ullam sunt beatae, recusandae id, quidem delectus mollitia ipsa quo laborum aliquam. Dignissimos delectus autem, illo natus laborum ipsam.</p>
+                </article>
+                <article>
+                    <h2>Get to the chopper...</h2>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore in, consequatur sit ab, vitae aut distinctio earum laudantium blanditiis et aliquam ipsam excepturi molestias reiciendis magni vero nesciunt tempore possimus.
+                </article>
+                <article>
+                    <h2>What's a horse doing on a spaceship...?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quod est sint nostrum iure corporis repudiandae sed vitae reprehenderit totam nisi excepturi incidunt laudantium libero ipsa autem harum commodi ex?</p>
+                </article>
+                <article>
+                    <h2>I pity the the fool...</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ad dolores cumque corrupti voluptatibus consectetur, eius suscipit adipisci facilis quasi facere, asperiores fugiat quis laboriosam ut pariatur blanditiis explicabo! Quas.
+                </article>
+                <article>
+                    <h2>Get to the chopper...</h2>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore in, consequatur sit ab, vitae aut distinctio earum laudantium blanditiis et aliquam ipsam excepturi molestias reiciendis magni vero nesciunt tempore possimus.
+                </article>
+                <article>
+                    <h2>What's a horse doing on a spaceship...?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quod est sint nostrum iure corporis repudiandae sed vitae reprehenderit totam nisi excepturi incidunt laudantium libero ipsa autem harum commodi ex?</p>
+                </article>
+            </section>
+        </div>
+        <script>
+            $("a.stack").on("click", function (){
+                $("article").addClass("stack");
+            });
+            $("a.grid").on("click", function (){
+                $("article").removeClass("stack");
+            });
+        </script>
+    </body>
+</html>
