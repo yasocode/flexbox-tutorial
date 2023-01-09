@@ -116,6 +116,10 @@ article{
     transition: flex-basis 0.2s linear;
 }
 
+article:hover{
+    background-color: aqua;
+}
+
 article.stack{
     flex: 0 1 100%;
 }
